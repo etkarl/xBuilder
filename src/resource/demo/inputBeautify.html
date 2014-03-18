@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="/css/lib/widget/inputBeautify.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        *{padding:0;margin:0}
+        body{font:12px/1.5 '宋体'}
+        .example{padding:20px 0; text-align:left;width:500px;margin:0 auto;}
+        .example li{display:inline-block;width:150px;text-align:left;margin-bottom:15px;}
+    </style>
+</head>
+<body>
+    <div style="margin:200px auto; text-align:center;">
+        <ul class="example" id="J_CheckBoxList">
+            <li><label><input type="checkbox" value="Checkbox1" checked="checked" disabled="disabled" />我是Checkbox1</label></li>    
+            <li><label><input type="checkbox" value="Checkbox2" disabled="disabled" />我是Checkbox2</label></li>	        
+            <li><label><input type="checkbox" value="Checkbox3" checked="checked" />我是Checkbox3</label></li>
+            <li><label><input type="checkbox" value="Checkbox4" />我是Checkbox4</label></li>
+            <li><label><input type="checkbox" value="Checkbox5" />我是Checkbox5</label></li>
+        </ul>
+        <ul class="example">
+            <li><label><input type="radio" name="month" value="Radio1" disabled="disabled" />我是Radio1</label></li>  
+            <li><label><input type="radio" name="month" value="Radio2"  checked="checked" disabled="disabled" />我是Radio2</label></li>       
+            <li><label><input type="radio" name="month" value="Radio3" />我Radio3</label></li>        
+            <li><label><input type="radio" name="month" value="Radio4" />我Radio4</label></li> 
+        </ul>
+        <input type="button" value="提交" id="J_Submit" />
+        <input type="button" value="添加Checkbox" id="J_AddDom" />
+        <input type="button" value="全选/不选" id="J_SelectAll" />
+    </div>
+    <script src="http://a.tbcdn.cn/apps/tdata/js/lib/beast/merge.js"></script>
+    <script src="/js/lib/Energon/src/widget/ui/inputBeautify.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            $(function () {
+                $('input').inputBeautify();
+                $('#J_Submit').click(function () {
+                    $('.example input').each(function () {
+                        if ($(this)[0].checked) {
+                            console.log($(this).val());
+                        }
+                    });
+                });
+                $('#J_AddDom').click(function () {
+                    var account = $('input[type="checkbox"]').length + 1;
+                    $('#J_CheckBoxList').append('<li><label><input type="checkbox" value="Checkbox' + account + '" />我是Checkbox' + account + '</label></li>');
+                    $('input').inputBeautify();
+                });
+                $('#J_SelectAll').toggle(
+                    function () {
+                        $('input:checkbox').each(function () {
+                            $(this).prop('checked', true);
+                            $(this).trigger('change');
+                        });
+                    }, function () {
+                        $('input:checkbox').each(function () {
+                            $(this).prop('checked', false);
+                            $(this).trigger('change');
+                        });
+                    }
+                );
+                $('.example li input').bind('click', function (e) {
+                    console.log('li clicked');
+                });
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>

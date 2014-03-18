@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>plugin</title>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                font-size:12px;
+            }
+            .demo li{margin:5px 0 5px 150px ; list-style:none;}
+        </style>
+    </head>
+    <body>
+        <ul class="demo">
+            <li>
+                <div style="padding:5px 0">60个中文：</div><textarea class="e-textarea" cols="90" rows="5">Example</textarea>
+            </li>
+            <li>
+                <div style="padding:5px 0">60个中文：</div><textarea class="e-textarea" cols="90" rows="5">测试</textarea>
+            </li>
+            <li>
+                <div style="padding:5px 0">60个字符(不区分中英文)：</div><textarea data-chars="1" class="e-textarea" cols="90" rows="5">Example</textarea>
+            </li>
+            <li>
+                <div style="padding:5px 0">20个中文：</div><textarea data-limit-words="20" class="e-textarea" cols="90" rows="5">Example</textarea>
+            </li>
+        </ul>
+        <script src="http://a.tbcdn.cn/apps/tdata/js/lib/beast/merge.js"></script>
+        <script>
+            (function($){
+                $.use('ui-wordsLimit', function () {
+                    $('.e-textarea').wordsLimit();
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

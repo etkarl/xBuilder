@@ -1,0 +1,10 @@
+.ez-checkbox,.ez-radio,
+.ez-checkbox-selected,.ez-radio-selected,
+.ez-checkbox-disable,.ez-radio-disable {display:inline-block;cursor:pointer;height:18px;line-height:18px;color:#333;padding-left:21px; zoom: 1; *display:inline; _height:15px;
+background-image:url(../../../images/inputSprite.png);background-repeat:no-repeat;}
+.ez-checkbox {background-position:0 2px;}
+.ez-radio {background-position:0 -95px;}
+.ez-checkbox-selected {background-position: 0 -19px; }
+.ez-radio-selected {background-position: 0 -116px; }
+.ez-checkbox-disable,.ez-radio-disable{cursor:not-allowed;opacity:0.5;filter:alpha(opacity=50);}
+.ez-hide {opacity:0;filter:alpha(opacity=0);position:absolute;left:-9999px;}

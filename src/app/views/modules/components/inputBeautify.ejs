@@ -1,0 +1,94 @@
+<article id="ui-inputBeautify" class="mod-doc">
+  <header>
+    <h1 class="title">ui-inputBeautify:单选框复选框美化</h1>
+  </header>
+  <div class="content">
+    <section class="overview">
+      <h2 class="cell-title">介绍</h2>
+      <div class="cell-content">
+        调用此方法，可以美化checkbox，radio的样式，支持自定义样式
+      </div>
+    </section>
+    <section class="how">
+      <h2 class="cell-title">如何使用</h2>
+      <div class="cell-content">
+        <pre class="sh_javascript">
+            $.use('ui-inputBeautify',function(){
+                $('input').inputBeautify();
+            });
+        </pre>
+      </div>
+    </section>
+    
+    <section class="demo">
+      <div class="cell-content">
+        <a class="btn btn-large btn-danger" href="/demo/inputBeautify.html" title="演示demo">demo</a>
+      </div>
+    </section>
+    <section class="config">
+      <h2 class="cell-title">配置</h2>
+      <div class="cell-content">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>参数名</th>
+              <th>说明</th>
+              <th>类型</th>
+              <th>default</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <em>checkboxCls</em>
+              </td>
+              <td>checkbox初始样式</td>
+              <td>String</td>
+              <td>ez-checkbox</td>
+            </tr>
+            <tr>
+              <td>
+                <em>radioCls</em>
+              </td>
+              <td>radio初始样式</td>
+              <td>String</td>
+              <td>ez-radio</td>
+            </tr>
+            <tr>
+                <td>
+                    <em>disCheckboxCls</em>
+                </td>
+                <td>checkbox为disabled样式</td>
+                <td>String</td>
+                <td>ez-checkbox-disable</td>
+            </tr>
+            <tr>
+                <td>
+                    <em>disRadioCls</em>
+                </td>
+                <td>radio为disabled样式</td>
+                <td>String</td>
+                <td>ez-radio-disable</td>
+            </tr>
+            <tr>
+                <td>
+                    <em>selectedCheckboxCls</em>
+                </td>
+                <td>checkbox选中的样式</td>
+                <td>String</td>
+                <td>ez-checkbox-selected</td>
+            </tr>
+            <tr>
+                <td>
+                    <em>selectedRadioCls</em>
+                </td>
+                <td>radio选中的样式</td>
+                <td>String</td>
+                <td>ez-radio-selected</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</article>

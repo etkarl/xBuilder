@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6"> <![endif]--> 
+<!--[if IE 7 ]>    <html class="ie ie7"> <![endif]--> 
+<!--[if IE 8 ]>    <html class="ie ie8"> <![endif]--> 
+<!--[if gte IE 9 ]>    <html class="ie"> <![endif]--> 
+<!--[if !(IE)]><!--> <html> <!--<![endif]-->
+    <head>
+        <meta charset="gbk"/>
+        <title>淘数据前端知识中心</title>
+        <meta name="description" content="淘数据前端知识中心"/>
+        <meta name="keywords" content="淘数据,前端,知识库"/>
+		<!--[if IE]> 
+            <script src="http://a.tbcdn.cn/apps/tdata/js/base/html5-reset.js"></script> 
+        <![endif]--> 
+        <link rel="stylesheet" href="/css/global/merge.css"/>
+        <link rel="stylesheet" href="/css/base/sh_emacs.min.css"/>
+    </head>
+    <body class="page-tools">
+        <%- partial('modules/nav.ejs') %>
+        <header id="header" class="container">
+            <%- partial('modules/header.ejs') %>
+        </header>
+        <div id="content" class="container">
+              <div class="row">
+                <div class="span3">
+                    <%- partial('modules/sidenavs/tools-sidenav.ejs') %>
+                </div>
+                <div class="span9">
+                    <%- partial('modules/tools/htmlencode.ejs') %>
+                </div>
+              </div>
+        </div>
+        <footer id="footer" class="container">
+            <%- partial('modules/footer.ejs') %>
+        </footer>
+        <script type="text/javascript" src="http://a.tbcdn.cn/apps/tdata/js/lib/beast/merge.js"></script>
+        <script type="text/javascript" src="/js/global/merge.js"></script>
+        <script type="text/javascript" src="/js/global/highlight.merge.js"></script>
+        <script type="text/javascript">
+            jQuery(function ($) {
+                sh_highlightDocument();
+            });
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<article id="ui-wordsLimit" class="mod-doc">
+  <header>
+    <h1 class="title">ui-wordsLimit:文本输入框字数提示</h1>
+  </header>
+  <div class="content">
+    <section class="overview">
+      <h2 class="cell-title">介绍</h2>
+      <div class="cell-content">
+        当文本输入框字数有限制时，可以用来提示用户已输入的字符数或者超出的字符数
+      </div>
+    </section>
+    <section class="how">
+      <h2 class="cell-title">如何使用</h2>
+      <div class="cell-content">
+        <pre class="sh_javascript">
+$.use('ui-wordsLimit',function(){
+   $('.e-textarea').wordsLimit();
+});
+        </pre>
+      </div>
+    </section>
+    <section class="HTML">
+      <h2 class="cell-title">HTML结构</h2>
+      <div class="cell-content">
+        <pre class="sh_javascript">
+&lt;textarea&nbsp;class=&quot;e-textarea&quot;&nbsp;cols=&quot;90&quot;&nbsp;rows=&quot;5&quot;&gt;Example&lt;/textarea&gt;<br />&lt;textarea&nbsp;class=&quot;e-textarea&quot;&nbsp;cols=&quot;90&quot;&nbsp;rows=&quot;5&quot;&gt;测试&lt;/textarea&gt;<br />&lt;textarea&nbsp;data-chars=&quot;1&quot;&nbsp;class=&quot;e-textarea&quot;&nbsp;cols=&quot;90&quot;&nbsp;rows=&quot;5&quot;&gt;Example&lt;/textarea&gt;<br />&lt;textarea&nbsp;data-limit-words=&quot;20&quot;&nbsp;class=&quot;e-textarea&quot;&nbsp;cols=&quot;90&quot;&nbsp;rows=&quot;5&quot;&gt;Example&lt;/textarea&gt;
+        </pre>
+      </div>
+    </section>
+    <section class="demo">
+      <div class="cell-content">
+        <a class="btn btn-large btn-danger" href="/demo/wordsLimit.html" title="演示demo">demo</a>
+      </div>
+    </section>
+    <section class="config">
+      <h2 class="cell-title">配置</h2>
+      <div class="cell-content">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>参数名</th>
+              <th>说明</th>
+              <th>类型</th>
+              <th>default</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <em>data-limit-words</em>
+              </td>
+              <td>限制的字符数</td>
+              <td>Number</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td>
+                <em>data-chars</em>
+              </td>
+              <td>1(把中文当做一个字符) 2(把中文当做2个字符，即按字节计算)</td>
+              <td>Number</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</article>

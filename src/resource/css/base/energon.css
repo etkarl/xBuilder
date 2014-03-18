@@ -1,0 +1,66 @@
+/**
+ * 知识库基础样式
+ * @author : yu.yuy
+ * @createTime : 2012-08-28
+ */
+header#header{
+	margin-top:40px;
+}
+.mod-doc{
+	margin-bottom: 50px;
+	padding-top: 40px;
+}
+.mod-doc header h1{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 4px solid #f05d5d;
+	color: #4C8CCD;
+}
+.mod-doc h2{
+	font-size: 16px;
+	color: #999;
+}
+.mod-doc .config em{
+	color: #4C8CCD;
+	font-style:normal;
+	font-size: 14px;
+	font-weight: 700;
+}
+.mod-doc .cell-content{
+	padding-left: 20px;
+}
+.mod-doc .demo .cell-content{
+	margin-left: 20px;
+	height: 60px;
+	line-height: 60px;
+	background-color: whiteSmoke;
+	text-align: center;
+}
+.mod-doc .how-crosswise .cell-content:after{
+	content:".";
+	display:block; 
+	height:0; 
+	clear:both;
+	visibility:hidden;
+}
+.mod-doc .how-crosswise .cell-content pre{
+	float: left;
+	width: 45%;
+	margin-right: 8px;
+}
+.mod-doc .how-crosswise .cell-content .demo{
+	float: left;
+	width: 50%;
+}
+.page-html .nav>.html,
+.page-css .nav>.css,
+.page-js .nav>.js,
+.page-tools .nav>.tools{
+	background-color: #222;
+}
+.page-html .nav>.html>a,
+.page-css .nav>.css>a,
+.page-js .nav>.js>a,
+.page-tools .nav>.tools>a{
+	color: #FFF;
+}

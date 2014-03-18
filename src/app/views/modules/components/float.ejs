@@ -1,0 +1,67 @@
+                  <article id="ui-float" class="mod-doc">
+                    <header>
+                        <h1 class="title">ui-float:浮动条</h1>
+                    </header>
+                    <div class="content">
+                        <section class="overview">
+                            <h2 class="cell-title">介绍</h2>
+                            <div class="cell-content">
+                                页面左右侧的浮动条
+                            </div>
+                        </section>
+                        <section class="how">
+                            <h2 class="cell-title">如何使用</h2>
+                            <div class="cell-content">
+                                <pre class="sh_javascript">
+$.use('ui-float.v2',function(){});</pre>
+                            </div>
+                        </section>
+                        <section class="HTML">
+                            <h2 class="cell-title">HTML结构</h2>
+                            <div class="cell-content">
+                                <pre class="sh_javascript">
+&lt;div&nbsp;class=&quot;e_float_bar&quot;&nbsp;data-type=&quot;leftmost&quot;&nbsp;data-collapse=&quot;yes&quot;&gt;leftmost&nbsp;yes&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;e_float_bar&quot;&nbsp;data-type=&quot;leftmost&quot;&nbsp;data-collapse=&quot;no&quot;&nbsp;data-top=&quot;600px&quot;&gt;leftmost&nbsp;no&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;e_float_bar&quot;&nbsp;data-type=&quot;rightmost&quot;&nbsp;data-collapse=&quot;yes&quot;&gt;rightmost&nbsp;yes&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;e_float_bar&quot;&nbsp;data-type=&quot;rightmost&quot;&nbsp;data-collapse=&quot;no&quot;&nbsp;data-top=&quot;600px&quot;&gt;rightmost&nbsp;no&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;e_float_bar&quot;&nbsp;data-type=&quot;rightedge&quot;&nbsp;data-collapse=&quot;yes&quot;&nbsp;data-top=&quot;30px&quot;&gt;rightedge&nbsp;yes&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;e_float_bar&quot;&nbsp;data-type=&quot;rightedge&quot;&nbsp;data-collapse=&quot;no&quot;&nbsp;data-top=&quot;300px&quot;&gt;rightedge&nbsp;no&lt;/div&gt;<br />&lt;div&nbsp;id=&quot;div0&quot;&nbsp;class=&quot;e_float_bar&quot;&nbsp;data-type=&quot;leftedge&quot;&nbsp;data-collapse=&quot;yes&quot;&nbsp;data-top=&quot;30px&quot;&gt;leftedge&nbsp;yes&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;e_float_bar&quot;&nbsp;data-type=&quot;leftedge&quot;&nbsp;data-collapse=&quot;no&quot;&nbsp;data-top=&quot;330px&quot;&gt;leftedge&nbsp;no&lt;/div&gt;</pre>
+                            </div>
+                        </section>
+                        <section class="demo">
+                            <div class="cell-content">
+                                <a class="btn btn-large btn-danger" target="_blank" href="/demo/float.v2.html" title="演示demo">demo</a>
+                            </div>
+                        </section>
+                        <section class="config">
+                            <h2 class="cell-title">配置</h2>
+                            <div class="cell-content">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>参数名</th>
+                                            <th>说明</th>
+                                            <th>类型</th>
+                                            <th>default</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><em>data-type</em></td>
+                                            <td>显示的位置类型(leftmost、leftedge、rightedge、rightmost)</td>
+                                            <td>String</td>
+                                            <td>leftmost</td>
+                                        </tr>
+                                        <tr>
+                                            <td><em>data-top</em></td>
+                                            <td>离视窗上方的距离</td>
+                                            <td>Number</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><em>data-collapse</em></td>
+                                            <td>是否无论视窗宽度如何小都要显示浮动条。</td>
+                                            <td>Boolean</td>
+                                            <td>yes</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                  </article>
